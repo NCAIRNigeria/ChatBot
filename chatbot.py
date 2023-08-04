@@ -19,7 +19,7 @@ else:
     llm_name = "gpt-3.5-turbo"
 # print(llm_name)
 
-persist_directory = 'docs/chroma/'
+persist_directory = './docs/chroma/'
 embedding = OpenAIEmbeddings()
 vectordb = Chroma(persist_directory=persist_directory, embedding_function=embedding)
 llm = ChatOpenAI(model_name=llm_name, temperature=0)
