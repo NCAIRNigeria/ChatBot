@@ -31,5 +31,5 @@ You'll need a free API key from [OPENAI](https://platform.openai.com/account/api
 
 ### Pending
 
-- [] To change Embeddings Platform
-- [] To change LLM
+- [ ] To change Embeddings Platform
+- [ ] To change LLM
