@@ -1,5 +1,5 @@
 .env
 *.ipynb
-datasets
 .venv
 venv
+*.pdf
