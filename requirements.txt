@@ -1,0 +1,10 @@
+python-dotenv
+gradio
+typing-inspect
+typing_extensions
+openai
+langchain
+chroma
+chromadb
+tiktoken
+pypdf
