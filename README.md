@@ -29,7 +29,29 @@ You'll need a free API key from [OPENAI](https://platform.openai.com/account/api
 - if you want to chat with ncair data, you need the _docs/chroma_ folder and you only need to run the _chatbot.py_ file.
 - if you want to test the chatbot with your own data, you dont need the _docs/chroma_ folder and you can delete it. The first.py file run will create the _docs/chroma_ for you which will contain your Vector Store for the data you put in _datasets_ folder, then you run the _chatbot.py_ file.
 
+
+### System Requirements
+
+#### Python Version
+
+To use this software, you must have Python 3.10 or later installed. Earlier versions of Python will not compile.
+
+## C++ Compiler
+
+If you encounter an error while building a wheel during the `pip install` process, you may need to install a C++ compiler on your computer.
+
+### For Windows 10/11
+
+To install a C++ compiler on Windows 10/11, follow these steps:
+
+1. Install Visual Studio 2022.
+2. Make sure the following components are selected:
+   - Universal Windows Platform development
+   - C++ CMake tools for Windows
+3. Run the installer and select the "gcc" component.
+
 ### Pending
 
 - [ ] To change Embeddings Platform
 - [ ] To change LLM
+
