@@ -9,8 +9,8 @@ from langchain.vectorstores import Chroma
 import uuid
 
 sys.path.append('../..')
-_ = load_dotenv(find_dotenv()) # read local .env file
-openai.api_key  = os.environ['OPENAI_API_KEY']
+_ = load_dotenv(find_dotenv())  # read local .env file
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 loader = PyPDFDirectoryLoader('./datasets')
 documents = loader.load()
@@ -29,9 +29,9 @@ unique_ids = list(set(ids))
 # Ensure that only docs that correspond to unique ids are kept and that only one of the duplicate ids is kept
 seen_ids = set()
 unique_docs = [
-    doc for doc, id in zip(docs, ids) 
+    doc for doc, id in zip(docs, ids)
     if id not in seen_ids and (seen_ids.add(id) or True)
-    ]
+]
 
 embedding = OpenAIEmbeddings()
 persist_directory = 'docs/chroma/'
